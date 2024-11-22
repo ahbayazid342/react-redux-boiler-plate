@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useSelectorType } from "./hooks/useSelectorType";
 import { ActionsUi } from "./app/store/slices/uiSlice";
+import Router from "./router/Router";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <>
-      <h1>App Page Here</h1>
+      <Router />
       <h1 className="text-3xl font-bold underline">{store.theme}!</h1>
       <div className="p-2">
         <button
